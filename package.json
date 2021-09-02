@@ -1,0 +1,24 @@
+{
+    "name": "fast-js-debugger",
+    "displayName": "fast js debugger",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+shift+v",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "console.log('${TM_FILENAME} - ${TM_LINE_NUMBER} ${TM_SELECTED_TEXT} >>>>>>>>')"
+                }
+            }
+        ]
+    }
+}
