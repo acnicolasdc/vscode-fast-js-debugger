@@ -28,7 +28,7 @@
                 }
             },
             {
-                "key": "cmd+shift+a",
+                "key": "ctrl+shift+a",
                 "command": "editor.action.insertSnippet",
                 "when": "editorTextFocus",
                 "args": {
@@ -36,7 +36,7 @@
                 }
               },
               {
-                "key": "cmd+shift+f",
+                "key": "ctrl+shift+f",
                 "command": "editor.action.insertSnippet",
                 "when": "editorTextFocus",
                 "args": {
