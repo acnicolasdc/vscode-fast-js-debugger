@@ -26,7 +26,23 @@
                 "args": {
                     "snippet": "console.log('${TM_FILENAME} - ${TM_LINE_NUMBER} ${TM_SELECTED_TEXT} >>>>>>>>', ${TM_SELECTED_TEXT})"
                 }
-            }
+            },
+            {
+                "key": "cmd+shift+a",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "const ${TM_SELECTED_TEXT} () => {} "
+                }
+              },
+              {
+                "key": "cmd+shift+f",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "snippet": "function ${TM_SELECTED_TEXT} () {} "
+                }
+              }
         ]
     }
 }
